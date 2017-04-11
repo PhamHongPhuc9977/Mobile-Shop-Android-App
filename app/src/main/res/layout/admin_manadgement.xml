@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.tuanle.mobile_shop_app.MainActivity">
+
+
+<TextView
+    android:id="@+id/orderTextView"
+    android:text="1."
+    android:textSize="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#0d0c0c"/>
+
+<TextView
+    android:id="@+id/productNameTextView"
+    android:paddingLeft="20dp"
+    android:textSize="20dp"
+    android:text="Iphone 5"
+    android:textColor="#0a0909"
+    android:layout_toRightOf="@+id/orderTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<Button
+    android:id="@+id/adminDeleteButton"
+    android:background="@drawable/circle2"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="10"
+    android:layout_width="65dp"
+    android:layout_height="40dp"
+    android:text="Delete"
+    android:textSize="12dp"
+    android:layout_toRightOf="@id/productImageImageView"
+
+
+    />
+
+<Button
+    android:id="@+id/adminEditButton"
+    android:background="@drawable/circle2"
+    android:shadowColor="#A8A8A8"
+    android:shadowDx="0"
+    android:shadowDy="0"
+    android:shadowRadius="10"
+    android:layout_toRightOf="@id/adminDeleteButton"
+    android:layout_marginLeft="10dp"
+    android:layout_width="65dp"
+    android:layout_height="40dp"
+    android:text="Edit"
+    android:textSize="12dp"
+
+    />
+
+<ImageView
+    android:id="@+id/productImageImageView"
+    android:paddingLeft="10dp"
+    android:src="@drawable/abc"
+    android:layout_width="130dp"
+    android:layout_height="40dp"
+    android:contentDescription=""
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/productNameTextView"
+    android:layout_toEndOf="@+id/productNameTextView" />
+
+</RelativeLayout>
